@@ -1,24 +1,18 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
-import { Navbar, NavbarBrand } from "reactstrap";
-import Meny from "./components/MenuComponent";
+import Main from "./components/MainComponent";
 import "./App.css";
-import Menu from "./components/MenuComponent";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Navbar dark color="primary">
-          <div className="container">
-            <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
-          </div>
-        </Navbar>
-        <Menu />
+        <Main />
       </div>
     );
   }
 }
+
+export default App;
 
 // function App() {
 //   return (
@@ -40,5 +34,3 @@ class App extends Component {
 //     </div>
 //   );
 // }
-
-export default App;
